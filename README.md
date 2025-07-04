@@ -1,2 +1,2 @@
-# wdd130-homepage
+# wdd130
 Student homepage for WDD130
