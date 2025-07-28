@@ -1,0 +1,85 @@
+/* General Page Reset and Font */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, serif;
+  background-color: #F0F8FF;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header Styles */
+header {
+  background-color: #0074D9;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Main Content Styling */
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* About Us Aside Section */
+aside {
+  width: 90%;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #2ECC40;
+  color: white;
+  border: 2px solid #28a745;
+}
+
+/* Aside Image Styling */
+aside img {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 10px 0;
+}
+
+/* Main Profile Image Styling (Home page) */
+main img {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Paragraph Styling */
+p {
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+/* Footer Styling */
+footer {
+  margin-top: 40px;
+  padding: 15px 0;
+  border-top: 2px solid #ccc;
+  text-align: center;
+  background-color: #FF851B;
+  color: white;
+}
+
+/* Navigation Bar (optional for Week 4+) */
+nav {
+  background-color: #0074D9;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
