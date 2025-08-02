@@ -1,145 +1,95 @@
-/* Reset & Base */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Contact AshRaft Outdoor Adventures in Ashaiman, Accra, Ghana. We’d love to hear from you!" />
+  <title>Contact Us - AshRaft Outdoor Adventures</title>
+  <link rel="stylesheet" href="style/style.css" />
+</head>
+<body>
+  <header>
+    <img src="images/logo.jpg" alt="Rafting Site Logo" />
+    <h1>AshRaft Outdoor Adventures</h1>
+  </header>
 
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f9f9;
-  color: #333;
-  line-height: 1.6;
-}
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
 
-/* Header */
-header {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: center;
-  background-color: #0077b6;
-  color: white;
-  padding: 1rem;
-}
+  <main>
+    <section>
+      <h2>Contact Information</h2>
+      <p><strong>Address:</strong> Ashaiman, Accra, Ghana</p>
+      <p><strong>Phone:</strong> +233 54 366 1336</p>
+      <p><strong>Email:</strong> info@ashraftadventures.com</p>
+    </section>
 
-header img {
-  width: 60px;
-  height: auto;
-  margin-right: 1rem;
-}
+    <section class="map-section">
+      <h2>Find Us on the Map</h2>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.6844499316924!2d0.06309391609393826!3d5.774270947030253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9b04671290a5%3A0x20c05b419de25a53!2sAshaiman%2C%20Ghana!5e0!3m2!1sen!2sgh!4v1695131317396!5m2!1sen!2sgh" 
+        width="600" 
+        height="300" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
 
-header h1 {
-  font-size: 1.8em;
-}
+    <section>
+      <h2>Send Us a Message</h2>
+      <form>
+        <label for="username">Full Name:</label>
+        <input type="text" id="username" name="username" required />
 
-/* Nav */
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-  margin-top: 10px;
-}
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
 
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
+        <label for="purpose">Purpose:</label>
+        <select id="purpose" name="purpose">
+          <option value="booking">Booking</option>
+          <option value="feedback">Feedback</option>
+          <option value="support">Support</option>
+          <option value="general">General Inquiry</option>
+        </select>
 
-nav a:hover, nav a.active {
-  text-decoration: underline;
-}
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
 
-/* Main */
-main {
-  padding: 20px;
-}
+        <label>
+          <input type="checkbox" name="newsletter" />
+          Subscribe to our newsletter
+        </label>
 
-/* Section Boxes */
-section {
-  background: #ffffff;
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 30px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-}
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
 
-/* Headings */
-h2 {
-  color: #0077b6;
-  margin-bottom: 15px;
-}
+    <section>
+      <h2>Meet Our Team</h2>
+      <div class="employee-gallery">
+        <figure>
+          <img src="images/tony.jpg" alt="Tony Esene - Managing Director" />
+          <figcaption><strong>Tony Esene</strong><br>Managing Director<br><small>Passionate about outdoor adventure and team building experiences.</small></figcaption>
+        </figure>
 
-/* Contact Form */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
+        <figure>
+          <img src="images/elorm.jpg" alt="Edem Elorm - Marketing Manager" />
+          <figcaption><strong>Edem Elorm</strong><br>Marketing Manager<br><small>Brings the excitement of AshRaft to the world with innovative campaigns.</small></figcaption>
+        </figure>
 
-form input, form select, form textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-}
+        <figure>
+          <img src="images/bright.jpg" alt="Bright Kekeli - Tourist Guide" />
+          <figcaption><strong>Bright Kekeli</strong><br>Tourist Guide<br><small>Ensures safe, fun, and unforgettable river adventures.</small></figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
 
-form button {
-  background-color: #0077b6;
-  color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 1em;
-}
-
-form button:hover {
-  background-color: #023e8a;
-}
-
-/* Team Section */
-.employee-gallery {
-  display: flex;
-  gap: 20px;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  margin-top: 1rem;
-}
-
-.employee-gallery figure {
-  text-align: center;
-  width: 180px;
-}
-
-.employee-gallery img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-.employee-gallery figcaption {
-  margin-top: 8px;
-  font-weight: bold;
-}
-
-/* Map */
-.map-section iframe {
-  width: 100%;
-  height: 300px;
-  border: none;
-}
-
-/* Footer */
-footer {
-  background-color: #0077b6;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: 30px;
-}
-
-footer .social-icons img {
-  width: 24px;
-  margin: 0 10px;
-}
+  <footer>
+    <p>&copy; 2025 AshRaft Outdoor Adventures | <a href="https://www.figma.com/file/xyz1234/Rafting-Wiref
